@@ -1,0 +1,61 @@
+body {
+    text-align: center;
+}
+
+.container {
+    margin: 50px;
+    padding: 25px;
+    border: 1px solid black;
+}
+
+.position  {
+    /* Static es su valor default y no se ve afectado por top,left,right,bottom */
+    /* Relative modifica a partir de su posicion original/natural */
+    /* Fixed modifica a partir del viewport = la pantalla que ve el usuario. No el tamaño del sitio web */
+    /* Absolute se posiciona de forma relativa a su elemento ancestro  mas cercano. Si no existe un ancestro, tomará el viewport del <body>*/
+    /* Sticky posiciona el elemento para que siempre este disponible en el viewport. Va a depender de su ancestro mas cercano. De forma independiente de los scroll */
+
+    position: sticky;
+    top: 0;
+    /* left: 50px;
+    right: 50px;
+    bottom: 50px; */
+}
+
+.display {
+    border: 1px solid red;
+}
+
+p > span {
+    color: red;
+    border: 1px solid black;
+}
+
+#display1 {
+    color: red;
+    border: 1px solid black;
+    display: none; 
+}
+
+#display2 {
+    display: inline;
+    height: 200px;
+    width: 300px;
+
+}
+
+#display3 {
+    display: block;
+}
+
+#display4 {
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+
+}
+
+
+li  {
+    display: inline;
+}
